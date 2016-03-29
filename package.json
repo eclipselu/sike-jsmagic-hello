@@ -11,5 +11,8 @@
   "license": "ISC",
   "bin": {
     "greet": "./bin/greet.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
