@@ -12,6 +12,10 @@
   "bin": {
     "greet": "./bin/greet.js"
   },
+  "scripts": {
+    "build": "babel src --output-dir lib",
+    "watch": "babel src --output-dir lib --watch"
+  },
   "dependencies": {
     "minimist": "^1.2.0"
   }
