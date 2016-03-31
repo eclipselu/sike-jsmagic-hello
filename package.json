@@ -4,7 +4,10 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir lib",
+    "watch": "babel src --out-dir lib --watch",
+    "motch": "mocha 'lib/**/*_test.js' -w",
+    "test": "mocha 'lib/**/*_test.js'"
   },
   "keywords": [],
   "author": "",
@@ -12,11 +15,11 @@
   "bin": {
     "greet": "./bin/greet.js"
   },
-  "scripts": {
-    "build": "babel src --out-dir lib",
-    "watch": "babel src --out-dir lib --watch"
-  },
   "dependencies": {
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
